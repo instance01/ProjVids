@@ -1,4 +1,4 @@
 ProjVids
 ========
 
-a video sharing website
+A lite video sharing website.
