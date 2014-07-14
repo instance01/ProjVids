@@ -1,0 +1,84 @@
+
+body {
+    font-family: "Consolas", Times, serif;
+	color: #FFFFFF;
+	background: linear-gradient(black, darkred);
+	background: -webkit-linear-gradient(black, darkred);
+	background: -moz-linear-gradient(black, darkred);
+	background: -o-linear-gradient(black, darkred);
+	background: -ms-linear-gradient(black, darkred);
+	background-repeat: no-repeat;
+}
+
+#search{color: #FFFFFF !important}
+
+
+/*footer{
+	position: fixed;
+	bottom: 0;	
+}*/
+
+hr {
+	border: 0;
+	height: 0;
+	margin-top: 5px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+
+.rotate:hover {
+  -webkit-animation: rotatingstuff 0.4s ease-in-out;
+  -moz-animation: rotatingstuff 0.4s ease-in-out;
+  -ms-animation: rotatingstuff 0.4s ease-in-out;
+  animation: rotatingstuff 0.4s ease-in-out;
+}
+
+
+@keyframes rotatingstuff {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotatingstuff {
+  from {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotatingstuff {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-ms-keyframes rotatingstuff {
+  from {
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
