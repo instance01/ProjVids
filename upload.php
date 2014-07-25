@@ -3,8 +3,9 @@
 <head>
 <title>Upload</title>
 <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="s/css/semantic.min.css">
+<script type="text/javascript" src="s/javascript/s.js"></script>
 <script type="text/javascript">
-
 <?php
 $user = mysql_real_escape_string($_GET['u']);
 $pw = mysql_real_escape_string($_GET['p']);
@@ -74,22 +75,45 @@ function uploadCanceled(evt) {
 </script>
 </head>
 <body>
-Content WIP. <br>
-  <form id="form1" enctype="multipart/form-data" method="post" action="Upload.aspx">
-    <div class="row">
-      <label for="fileToUpload">Select a Video</label><br />
-      <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelected();"/>
-      <input type="text" id="title" placeholder="Title"/>
-      <textarea id="desc">Description</textarea>
-      <input type="text" id="tags" placeholder="Tags"/>
+
+<center>
+<h3>Video Upload</h3>
+
+<form id="form1" enctype="multipart/form-data" method="post" action="upload_.php">
+<div class="ui small form segment">
+  <div class="two fields">
+    <div class="field">
+        <div class="ui labeled input">
+            <input type="text" id="title" placeholder="Title">
+        </div>
     </div>
-    <div id="fileName"></div>
-    <div id="fileSize"></div>
-    <div id="fileType"></div>
-    <div class="row">
-      <input type="button" id="uploadbtn" value="Upload" />
+    <div class="field">
+    	<div class="ui labeled input">
+            <input type="text" id="tags" placeholder="Tags"/>
+        </div>
     </div>
-    <div id="progressNumber"></div>
-  </form>
+  </div>
+  <div class="two fields">
+  	<div class="field">
+    	<textarea id="desc">Description</textarea>
+    </div>
+    <div class="field">
+    	<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelected();"/><br>
+        <div id="fileName"></div>
+        <div id="fileSize"></div>
+        <div id="fileType"></div>
+    </div>
+  </div>
+  
+  <div class="ui teal small submit button" id="uploadbtn">Upload</div>
+  <div id="progressNumber"></div>
+</div>
+
+</form>
+
+  
+  <br><br>
+  <a href="index.php">Back home</a>
+</center>
 </body>
 </html>
